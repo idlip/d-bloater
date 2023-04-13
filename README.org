@@ -32,5 +32,6 @@ nix-shell
 
 ----------
 
-
+#+begin_center
 Although Installing a Custom rom would be a better choice, it comes with its own cons and need to be very careful, if not say bye to your phone ;-)
+#+end_center
