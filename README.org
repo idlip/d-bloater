@@ -1,0 +1,36 @@
+#+title: Android Debloater in Nixos
+#+author: iDlip
+#+language: English
+
+* Universal Android Debloater
+
+- A great utility to debloat apps in android using ~adb~.
+- It gives a safe list to remove like google stuffs.
+
+I have the latest binary of this in repo, please do check and download latest one from their github release tags.
+
+[[https://github.com/0x192/universal-android-debloater]]
+
+* Shell.nix
+
+[[file:shell.nix][Shell.nix]] is a nix file for ~UAD~ to work. UAD binary does not work under nixos, as nix violates [[https://en.wikipedia.org/wiki/Hierarchical_file_system][FHS]].
+
+- Just run this command in this directory.
+  #+begin_src sh
+nix-shell
+  #+end_src
+
+- You can now run ~UAD~ with ~./uad_gui-linux~
+
+* Realme Debloat Bash Script
+
+- This would be easier method without needing ~UAD~.
+- You need to know/get the packages names (eg: =com.android.fmradio=)
+- This only requires ~adb~ and your terminal (shell).
+
+  I have forked this from [[https://github.com/realKarthikNair/realme-ui-debloater]]
+
+----------
+
+
+Although Installing a Custom rom would be a better choice, it comes with its own cons and need to be very careful, if not say bye to your phone ;-)
